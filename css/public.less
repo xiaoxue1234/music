@@ -1,0 +1,13 @@
+@color-white: #FFF;
+@color-gray: rgba(255, 255, 255, .5);
+@color-green: #31C27C;
+
+.spriteFn(@x:0,@y:0) {
+  background: url("../img/sprite_play.png") no-repeat @x @y;
+  background-size: .8rem 7rem;
+}
+
+.transitionFn(@property:all,@duration:1s,@time-function:linear,@delay:0s) {
+  -webkit-transition: @arguments;
+  transition: @arguments;
+}
